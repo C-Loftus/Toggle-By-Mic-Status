@@ -5,7 +5,7 @@
 
 # Set project directory
 PROJECT_DIR="."
-BINARY_NAME="breaktimer_microphone_daemon"
+BINARY_NAME="toggle_by_mic_status"
 
 # Step 1: Compile the Rust project
 echo "Compiling Rust project..."
