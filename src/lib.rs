@@ -2,11 +2,17 @@ use std::convert::TryInto;
 use std::ffi::c_void;
 use std::ptr::NonNull;
 
+use mac_notification_sys::send_notification;
 use objc2_core_audio::{
     AudioObjectGetPropertyData, AudioObjectPropertyAddress,
     kAudioDevicePropertyDeviceIsRunningSomewhere, kAudioHardwarePropertyDefaultInputDevice,
     kAudioObjectPropertyElementMain, kAudioObjectPropertyScopeGlobal, kAudioObjectSystemObject,
 };
+
+pub fn notify_and_print(message: &str) {
+    println!("{}", message);
+    send_notification("Breaktimer Update", None, message, None).unwrap();
+}
 
 // check if the default input device is running on macos
 pub fn microphone_is_in_use() -> Result<bool, Box<dyn std::error::Error>> {
