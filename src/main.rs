@@ -55,6 +55,7 @@ fn kill_program(program_path: &str) {
 
 fn main() {
     let args = Args::parse();
+    // have to set this to get notifications
     set_application("com.apple.Terminal").unwrap();
 
     println!("Watching default microphone... ");

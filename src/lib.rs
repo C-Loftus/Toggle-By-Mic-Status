@@ -11,7 +11,7 @@ use objc2_core_audio::{
 
 pub fn notify_and_print(message: &str) {
     println!("{}", message);
-    send_notification("Breaktimer Update", None, message, None).unwrap();
+    send_notification("Toggle by Mic Update", None, message, None).unwrap();
 }
 
 // check if the default input device is running on macos
