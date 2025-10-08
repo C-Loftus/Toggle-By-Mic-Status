@@ -1,3 +1,6 @@
+# Copyright 2025 Colton Loftus
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v6.0.0 # Use the latest stable version
@@ -9,6 +12,13 @@ repos:
       - id: check-xml
       - id: end-of-file-fixer
       - id: trailing-whitespace
+
+  - repo: https://github.com/google/addlicense
+    rev: "v1.2.0"
+    hooks:
+      - id: addlicense
+        args:
+          ["-s=only", -l, "AGPL-3.0-or-later", -c, "Colton Loftus"]
 
   - repo: local
     hooks:

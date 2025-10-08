@@ -1,3 +1,6 @@
+// Copyright 2025 Colton Loftus
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
 use toggle_by_mic_status::{microphone_is_in_use, notify_and_print};
 
 use clap::Parser;

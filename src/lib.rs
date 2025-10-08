@@ -1,3 +1,6 @@
+// Copyright 2025 Colton Loftus
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
 use std::convert::TryInto;
 use std::ffi::c_void;
 use std::ptr::NonNull;

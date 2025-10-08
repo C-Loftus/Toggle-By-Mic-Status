@@ -1,4 +1,7 @@
 #!/bin/bash
+# Copyright 2025 Colton Loftus
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
 
 # Install breaktimer_microphone_daemon
 # to run at startup in the background
